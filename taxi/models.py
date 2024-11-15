@@ -22,7 +22,8 @@ class Car(models.Model):
         Manufacturer, related_name="cars", on_delete=models.CASCADE
     )
     drivers = models.ForeignKey(
-        settings.AUTH_USER_MODEL, related_name="cars", on_delete=models.CASCADE
+        settings.AUTH_USER_MODEL, related_name="cars",
+        on_delete=models.CASCADE
     )
 
 
